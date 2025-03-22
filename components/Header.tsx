@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import ClientOnly from './utils/ClientOnly';
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -23,21 +24,23 @@ export default function Header() {
   }, [lastScrollY]);
 
   return (
-    <div
-      className={`z-20 bg-white fixed top-[36px] ${
-        isVisible ? 'sticky-header' : 'sticky-header-hidden'
-      }`}
-    >
-      <div className="flex justify-center items-center h-[5.25rem] px-20 border-b border-[rgba(88,88,88,0.08)]">
-        <div className="relative h-[30px] w-full">
-          <Image
-            src="/logo.avif"
-            alt="DoctorsNote"
-            fill
-            className="h-full object-contain"
-          />
+    <ClientOnly>
+      <div
+        className={`z-20 bg-white fixed top-[36px] ${
+          isVisible ? 'sticky-header' : 'sticky-header-hidden'
+        }`}
+      >
+        <div className="flex justify-center items-center h-[5.25rem] px-20 border-b border-[rgba(88,88,88,0.08)]">
+          <div className="relative h-[30px] w-full">
+            <Image
+              src="/logo.avif"
+              alt="DoctorsNote"
+              fill
+              className="h-full object-contain"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </ClientOnly>
   );
 }
