@@ -1,4 +1,4 @@
-# [My Doctors Note](https://doctors-note-two.vercel.app/)
+# [My Doctors Note](https://my-doctorsnote.vercel.app/)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
