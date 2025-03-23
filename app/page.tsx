@@ -151,10 +151,10 @@ export default function Home() {
                     </h2>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="263"
                       height="8"
                       viewBox="0 0 263 8"
                       fill="none"
+                      className="w-[200px] md:w-[263px]"
                     >
                       <path
                         d="M1.60392 6.51739C75.8107 3.33202 149.537 -0.692141 223.804 1.74768C236.24 2.15623 248.676 2.56478 261.112 2.97334"
