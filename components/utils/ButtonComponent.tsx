@@ -8,9 +8,9 @@ interface ButtonProps {
 export default function ButtonComponent({ dark, label }: ButtonProps) {
   return (
     <div className="flex justify-center">
-      <div className="w-max flex flex-col items-center gap-3">
-        <button className="relative fade-in text-white bg-[#2323FE] hover:bg-[#3030FF] flex justify-center items-center h-[60px] w-full rounded-xl gap-3 transition-all duration-150 cursor-pointer">
-          <p className="text-[18px] font-semibold">{label}</p>
+      <div className="w-max flex flex-col items-center gap-1 md:gap-3">
+        <button className="relative fade-in text-white bg-[#2323FE] hover:bg-[#3030FF] flex justify-center items-center h-[60px] w-[350px] rounded-xl gap-3 transition-all duration-150 cursor-pointer">
+          <p className="text-[16px] md:text-[18px] font-semibold">{label}</p>
           <svg
             height="20"
             width="20"
@@ -26,13 +26,13 @@ export default function ButtonComponent({ dark, label }: ButtonProps) {
             ></path>
           </svg>
         </button>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 md:gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
             height="33"
             viewBox="0 0 32 33"
             fill="none"
+            className="w-[20px] md:w-[32px]"
           >
             <g clipPath="url(#clip0_221_216)">
               <path
@@ -52,7 +52,7 @@ export default function ButtonComponent({ dark, label }: ButtonProps) {
             </defs>
           </svg>
           <p
-            className={`font-light tracking-wider ${
+            className={`font-light tracking-wider text-[13px] md:text-[16px] lg:text-[18px] ${
               dark ? 'text-zinc-600' : 'text-white'
             }`}
           >

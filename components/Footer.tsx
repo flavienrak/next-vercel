@@ -65,9 +65,9 @@ export default function Footer() {
   ];
 
   return (
-    <div className="flex flex-col gap-12 text-zinc-600 border-t border-[rgba(88,88,88,0.08)] p-[36px]">
+    <div className="flex flex-col gap-6 md:gap-12 text-zinc-600 border-t border-[rgba(88,88,88,0.08)] p-[36px]">
       <div className="w-full flex justify-center">
-        <div className="flex justify-between gap-4 w-full max-w-[1152px]">
+        <div className="flex justify-between flex-col md:flex-row gap-12 md:gap-4 w-full max-w-[1152px]">
           <div className="fade-up flex flex-col gap-6">
             <div className="relative h-[20px] w-[165px]">
               <Image
@@ -77,18 +77,18 @@ export default function Footer() {
                 className="absolute top-0 left-0 w-full h-full"
               />
             </div>
-            <p className="font-light text-[15px]">
+            <p className="font-light text-[14px] md:text-[15px]">
               <span className="font-bold tracking-wider">Support </span>{' '}
               (Mon-Fri, 9am-6pm EST)
             </p>
-            <p className="font-light text-[15px]">
+            <p className="font-light text-[14px] md:text-[15px]">
               <span className="font-bold tracking-wider">Email: </span>{' '}
               help@urgentsupport.co
             </p>
           </div>
 
           <div className="fade-up flex flex-col gap-6">
-            <h6 className="text-[18px] text-black tracking-wider">
+            <h6 className="text-[16px] md:text-[18px] text-black tracking-wider">
               Customer service
             </h6>
             <ul className="flex flex-col gap-4">
@@ -96,7 +96,7 @@ export default function Footer() {
                 <li key={item.id}>
                   <Link
                     href={item.href}
-                    className="text-[13px] hover:underline hover:text-[#121212] underline-offset-4"
+                    className="text-[12px] md:text-[13px] hover:underline hover:text-[#121212] underline-offset-4"
                   >
                     <span className="font-light tracking-wider">
                       {item.label}
@@ -108,13 +108,15 @@ export default function Footer() {
           </div>
 
           <div className="fade-up flex flex-col gap-6">
-            <h6 className="text-[18px] text-black tracking-wider">Policies</h6>
+            <h6 className="text-[16px] md:text-[18px] text-black tracking-wider">
+              Policies
+            </h6>
             <ul className="flex flex-col gap-3">
               {policyLinks.map((item) => (
                 <li key={item.id}>
                   <Link
                     href={item.href}
-                    className="text-[13px] hover:underline hover:text-[#121212] underline-offset-4"
+                    className="text-[12px] md:text-[13px] hover:underline hover:text-[#121212] underline-offset-4"
                   >
                     <span className="font-light tracking-wider">
                       {item.label}
@@ -126,17 +128,17 @@ export default function Footer() {
           </div>
 
           <div className="fade-up flex flex-col gap-6">
-            <h6 className="text-[18px] text-black tracking-wider">
+            <h6 className="text-[16px] md:text-[18px] text-black tracking-wider">
               Company Details
             </h6>
-            <p className="font-light text-[15px] tracking-wide">
+            <p className="font-light text-[13px] md:text-[15px] tracking-wide">
               COMPANY NAME & ADDRESS
             </p>
             <div className="flex flex-col gap-2">
-              <p className="font-light text-[15px] tracking-wide">
+              <p className="font-light text-[13px] md:text-[15px] tracking-wide">
                 Company registration
               </p>
-              <p className="font-light text-[15px] tracking-wide">
+              <p className="font-light text-[13px] md:text-[15px] tracking-wide">
                 number: 000000
               </p>
             </div>
