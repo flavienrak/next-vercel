@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="text-white">
       <div className="z-50 fixed top-0 left-0 w-full flex justify-center items-center bg-[#2323FE] h-[36px]">
-        <p className="font-medium tracking-wider">
+        <p className="text-[14px] lg:text-[16px] font-medium tracking-wider">
           30% OFF if you order in the next{' '}
           <span className="font-bold tracking-wider">08 </span> :{' '}
           <span>11</span>
@@ -39,10 +39,10 @@ export default function Home() {
         <Header />
       </header>
 
-      <div className="mt-[96px] lg:mt-[120px]">
+      <div className="mt-[80px] lg:mt-[114px]">
         <main>
-          <div className="px-4 lg:px-0">
-            <div className="relative h-[31.5rem] flex flex-col justify-center gap-7 items-center bg-img">
+          <div className="px-0 md:px-4 lg:px-0">
+            <div className="relative h-[325px] md:h-[503px] flex flex-col justify-center gap-7 items-center bg-img">
               <div className="flex flex-col items-center gap-2">
                 <h1 className="text-[28px] md:text-[46px] lg:text-[50px] text-center font-semibold leading-[32px] md:leading-[60px]">
                   Your Doctor's Note <br />
@@ -53,7 +53,7 @@ export default function Home() {
                   height="11"
                   viewBox="0 0 489 11"
                   fill="none"
-                  className="w-3/5"
+                  className="w-[250px] md:w-[434px]"
                 >
                   <path
                     d="M2.04221 8.74936C140.824 4.26105 278.754 -2.03459 417.339 5.49864C440.545 6.76009 463.751 8.02153 486.958 9.28298"
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-black p-[30px] flex justify-center">
+          <div className="text-black py-[30px] px-[15px] md:px-[30px] flex justify-center">
             <div className="max-w-[1152px] flex flex-col gap-8">
               <div className="fade-in flex justify-center">
                 <div className="fade-in flex flex-col gap-4 mx-auto max-w-[660px]">

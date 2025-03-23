@@ -30,8 +30,14 @@ export default function Header() {
           isVisible ? 'sticky-header' : 'sticky-header-hidden'
         }`}
       >
-        <div className="flex justify-center items-center px-20 py-4 lg:py-[1.65rem] border-b border-[rgba(88,88,88,0.08)]">
-          <Image src="/logo.avif" alt="DoctorsNote" height={30} width={240} />
+        <div className="flex justify-center items-center px-20 py-3 lg:py-6 border-b border-[rgba(88,88,88,0.08)]">
+          <Image
+            src="/logo.avif"
+            alt="DoctorsNote"
+            height={30}
+            width={240}
+            className="h-[23px] md:h-[30px] w-auto"
+          />
         </div>
       </div>
     </ClientOnly>
